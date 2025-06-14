@@ -7,7 +7,8 @@ from arguments import Commands
 
 
 def main():
-    if sys.argv[1] is None:
+    """Program entry point."""
+    if len(sys.argv) < 2:
         print(
             "Error: please provide a prompt when running this tool: python3 main.py {promt} --{argument}"
         )
